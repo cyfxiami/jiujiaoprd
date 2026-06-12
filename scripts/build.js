@@ -24,11 +24,4 @@ fs.mkdirSync(out, { recursive: true });
 
 copyEntry(path.join(root, 'index.html'), path.join(out, 'index.html'));
 
-for (const dir of ['images', 'docx_images']) {
-  const src = path.join(root, dir);
-  if (fs.existsSync(src)) {
-    copyEntry(src, path.join(out, dir));
-  }
-}
-
 console.log('Static build complete -> build/');
