@@ -447,7 +447,7 @@
                                         <ul>
                                             <li><strong>首页 Banner：</strong>增加 AAA 图片 + AAA 按钮；AAA精品结构不变，更换视频和图片，点击下单跳转 AAA 购买页。</li>
                                             <li><strong>邀请好友购酒：</strong>分享中间页 / 好友收到页的图片和文字与现有版本不一样，需独立配置。</li>
-                                            <li><strong>邀请合伙人页面：</strong>不同产品需要拼凑 <strong>不同的购买件数</strong>。</li>
+                                            <li><strong>邀请合伙人页面：</strong>不同产品需配置 <strong>不同的购买件数</strong>；邀请成为创始合伙人时，按钮上不直接展示价格，点击进入详情页后再展示。</li>
                                             <li><strong>老版首页：</strong>在列表最后新增 AAA 光明月，功能同 AAAA 光明月，仅图片、文字不一样。</li>
                                         </ul>
                                     </div>
@@ -489,12 +489,17 @@
                                     <button type="button" class="change-point-toggle" aria-expanded="true" aria-label="收起待确认事项内容">收起</button>
                                 </div>
                                 <div class="change-point-collapse">
-                                    <h3 class="change-point-title">待产品确认事项</h3>
+                                    <h3 class="change-point-title">6.12 已确认方案</h3>
+                                    <div class="change-point-body">
+                                        <ul>
+                                            <li><strong>3A 价格与规格：</strong>318 元/瓶，6 瓶/件（4A 仍为 490 元/瓶、6 瓶/件、1 件起售）。</li>
+                                            <li><strong>邀请成为创始会员：</strong>邀请链接上需购买 <strong>48 件</strong>，合计 48×318×6=91,584 元，满 9 万成为创始会员；邀请页按钮不直接写价格，用户点击进入详情页后查看价格。</li>
+                                        </ul>
+                                    </div>
+                                    <h3 class="change-point-title">仍待确认</h3>
                                     <div class="change-point-body">
                                         <ul>
                                             <li>3A光明月具体产品编码。</li>
-                                            <li>3A 价格与规格（4A 为 490 元/瓶、6 瓶/件、1 件起售，3A 待确认）。</li>
-                                            <li>各产品在邀请合伙人页的购买件数。</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -524,6 +529,7 @@
     <script>
         (function () {
             const PAGE_CHANGELOG = [
+                { time: '2026-06-12 16:00', text: '· 待确认事项 · 6.12 确认 3A 价格（318 元/瓶、6 瓶/件）、创始会员 48 件/91,584 元方案、创始合伙人邀请页按钮不展示价格' },
                 { time: '2026-06-10 16:00', text: '· 新建 酒交组织交易额产品扩展 PRD 说明页（含背景方案、组织交易额、AAA前端、后端任务、验收待确认）' }
             ];
 
